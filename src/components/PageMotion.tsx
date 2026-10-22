@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 const chapters = [
   ["about", "理念"],
   ["services", "服务"],
+  ["guidance", "指导"],
   ["research", "领域"],
   ["process", "流程"],
   ["faq", "问答"],

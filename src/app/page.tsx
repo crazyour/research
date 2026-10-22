@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { ArrowRight, ChevronRight, CircleCheckBig } from "lucide-react";
 import { Hero } from "@/components/Hero";
+import { GuidanceSection } from "@/components/GuidanceSection";
 import { Reveal } from "@/components/Reveal";
 import { SectionHeading } from "@/components/SectionHeading";
 import { ResearchCards } from "@/components/ResearchCards";
@@ -24,6 +25,8 @@ export default function HomePage() {
           <div className="service-grid">{services.map((item, i) => <Reveal className="service-card" delay={i * 60} key={item.title}><div className="service-icon"><item.icon size={23} /></div><h3>{item.title}</h3><p>{item.text}</p><small><CircleCheckBig size={15} />{item.value}</small></Reveal>)}</div>
         </div>
       </section>
+
+      <GuidanceSection />
 
       <section className="method-section">
         <div className="shell">

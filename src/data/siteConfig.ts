@@ -12,6 +12,7 @@ export const siteConfig = {
 export const navigation = [
   { label: "关于指导", href: "/#about" },
   { label: "服务内容", href: "/#services" },
+  { label: "升学指导", href: "/#guidance" },
   { label: "研究领域", href: "/research" },
   { label: "指导流程", href: "/#process" },
   { label: "常见问题", href: "/#faq" },

@@ -4,7 +4,7 @@ import { BrandMark } from "./BrandMark";
 import { siteConfig } from "@/data/siteConfig";
 
 const links = [
-  ["关于指导", "/#about"], ["服务内容", "/#services"], ["研究领域", "/research"],
+  ["关于指导", "/#about"], ["服务内容", "/#services"], ["升学指导", "/#guidance"], ["研究领域", "/research"],
   ["指导流程", "/#process"], ["常见问题", "/#faq"],
   ["隐私政策", "/privacy"], ["服务条款", "/terms"],
 ];
