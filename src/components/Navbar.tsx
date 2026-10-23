@@ -1,12 +1,14 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
 import { navigation } from "@/data/siteConfig";
 import { BrandMark } from "./BrandMark";
 
 export function Navbar() {
+  const pathname = usePathname();
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
@@ -18,7 +20,7 @@ export function Navbar() {
   }, []);
 
   return (
-    <header className={`navbar ${scrolled ? "is-scrolled" : ""}`}>
+    <header className={`navbar ${pathname !== "/" ? "is-subpage" : ""} ${scrolled ? "is-scrolled" : ""}`}>
       <div className="nav-inner shell">
         <Link href="/" className="brand-link" onClick={() => setOpen(false)}><BrandMark /></Link>
         <nav className={`nav-links ${open ? "is-open" : ""}`} aria-label="主导航">

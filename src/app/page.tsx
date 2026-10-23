@@ -37,7 +37,7 @@ export default function HomePage() {
 
       <section className="section" id="research">
         <div className="shell">
-          <Reveal><div className="heading-row"><SectionHeading eyebrow="研究领域" title="常见指导方向" text="AI、HCI、数据科学与跨学科研究。" /><Link className="text-link" href="/research">查看全部 <ArrowRight size={15} /></Link></div></Reveal>
+          <Reveal><div className="heading-row"><SectionHeading eyebrow="研究领域" title="过往指导中涉及的方向" text="由既有指导主题匿名归纳，只展示研究问题与方法类型。" /><Link className="text-link" href="/research">查看全部 <ArrowRight size={15} /></Link></div></Reveal>
           <ResearchCards limit={4} />
         </div>
       </section>
